@@ -6,10 +6,6 @@ This project aims to build a model that takes a book title as input and returns 
 
 ## Table of Contents
 - [About the Project](#about-the-project)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -24,54 +20,7 @@ The Book Recommendation System leverages machine learning to suggest books simil
 - **Scikit-learn Integration**: Utilizes Scikit-learn's `CountVectorizer` and `cosine_similarity` functions.
 - **User-Friendly**: Simple input-output model for ease of use.
 
-## Getting Started
-
-To get a local copy up and running, follow these simple steps.
-
-### Prerequisites
-
-Ensure you have the following installed:
-- Python 3.x
-- pip (Python package installer)
-
-### Installation
-
-1. **Clone the repository**:
-    ```sh
-    git clone https://github.com/jmdtanalyst/book_recommendation.git
-    cd book-recommendation-system
-    ```
-
-2. **Install required packages**:
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-3. **Prepare the data**:
-    - Ensure you have a CSV file named `books.csv` in the root directory with the following columns: `url`, `title`, `author`, `rating`, `genre`, `description`, and keywords.
-
-## Usage
-
-To use the Book Recommendation System, follow these steps:
-
-1. **Run the script**:
-    ```sh
-    python recommend.py
-    ```
-
-2. **Input a book title**:
-    - When prompted, enter the title of a book.
-    - The system will return a list of 10 similar books.
-
-### Example
-
-```sh
-Enter a book title: The Great Gatsby
-Recommended books:
-1. This Side of Paradise by F. Scott Fitzgerald
-2. Tender is the Night by F. Scott Fitzgerald
-...
-```
+### The dashboard and recommedation can be accessed on:  oci.jmcloudpro.com:8052
 
 ## Contributing
 
@@ -79,7 +28,7 @@ Contributions are what make the open-source community such an amazing place to l
 
 1. **Fork the Project**:
     ```sh
-    git clone https://github.com/jmdtanalyst/book-recommendation-system.git
+    git clone https://github.com/jmdtanalyst/book_recommendation.git
     ```
 
 2. **Create your Feature Branch**:
