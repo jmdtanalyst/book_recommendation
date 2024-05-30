@@ -79,7 +79,7 @@ Contributions are what make the open-source community such an amazing place to l
 
 1. **Fork the Project**:
     ```sh
-    git clone https://github.com/your_username/book-recommendation-system.git
+    git clone https://github.com/jmdtanalyst/book-recommendation-system.git
     ```
 
 2. **Create your Feature Branch**:
