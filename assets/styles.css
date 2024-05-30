@@ -1,0 +1,118 @@
+/* styles.css */
+
+/* Sidebar styling */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 16rem;
+    padding: 2rem 1rem;
+    background-color: #f8f9fa;
+}
+
+/* Content padding */
+.content {
+    margin-left: 16rem;
+    margin-right: 2rem;
+    padding: 2rem 1rem;
+}
+
+/* Border style */
+.border-style {
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 1 2px 12px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ccc;
+}
+
+/* Menu style */
+.menu-style {
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 26px;
+    color: #2196F3;
+    margin: 20px;
+}
+
+/* Title style */
+.title-style {
+    text-align: left;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
+    color: #2196F3;
+    margin: 20px;
+}
+
+/* Space style */
+.space-style {
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+/* KPI Style */
+.kpi_style {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #2196F3;
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional styles for KPI values */
+.kpi-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    margin: 20px;
+}
+
+.kpi-container > div {
+    margin: 0 20px;
+}
+
+.kpi-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+/* Header style */
+.header-style {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #2196F3;
+    letter-spacing: 0.2rem;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
+/* Footer style */
+.footer-style {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 8px;
+    color: #2196F3;
+    margin-left: 16rem;
+    letter-spacing: 0.2rem;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
