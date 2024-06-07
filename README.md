@@ -1,67 +1,35 @@
+### Book Recommendation System Project
 
+#### Overview
+This project involves building a book recommendation system using machine learning techniques. The system takes a book title as input and returns a list of 10 similar books. The project leverages web scraping, data preprocessing, and machine learning algorithms to achieve this goal.
+The dashboard can be accessed on this link:  http://oci.jmcloudpro.com:8052/
 
-# Book Recommendation System
+#### Key Components
 
-This project aims to build a model that takes a book title as input and returns a list of 10 similar books.
+1. **Data Collection**:
+   - **Web Scraping**: Data was collected from the Goodreads website, specifically from the "Best Books Ever" list. The BeautifulSoup library was used to scrape book details such as title, author, rating, genre, and description.
+   - **Data Storage**: The scraped data was stored in a Pandas DataFrame and saved as a CSV file for further processing.
 
-## Table of Contents
-- [About the Project](#about-the-project)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
+2. **Data Preprocessing**:
+   - **Tokenization and Vectorization**: The CountVectorizer class from Scikit-learn was used to tokenize and vectorize the text data, converting it into a format suitable for machine learning algorithms.
+   - **Feature Engineering**: A new column named "features" was created by combining the title, author, genre, and description of each book.
 
-## About the Project
+3. **Similarity Calculation**:
+   - **Cosine Similarity**: The cosine_similarity function from Scikit-learn was used to compute the similarity between books based on their vectorized features. This similarity matrix is the core of the recommendation system.
 
-The Book Recommendation System leverages machine learning to suggest books similar to a given title. It uses content-based recommendation techniques, specifically cosine similarity, to quantify the similarity between books based on their descriptions and other metadata.
+4. **Recommendation Generation**:
+   - **Function Definition**: A function was defined to take a book title as input and return a list of 10 similar books based on the cosine similarity scores.
+   - **Example Recommendations**: For instance, given the book "The Hunger Games," the system recommended books like "Divergent," "My Sister's Keeper," and "Harry Potter and the Order of the Phoenix."
 
-### Key Features
-- **Content-Based Recommendations**: Uses cosine similarity to find books similar to the input title.
-- **Scikit-learn Integration**: Utilizes Scikit-learn's `CountVectorizer` and `cosine_similarity` functions.
-- **User-Friendly**: Simple input-output model for ease of use.
+5. **Visualization and Analysis**:
+   - **Average Rating by Genre**: A bar chart was created to visualize the average rating of books by genre.
+   - **Rating vs. Number of Books per Genre**: A scatter plot was used to show the relationship between the number of books in each genre and their average ratings.
+   - **Rating Distribution**: A histogram was plotted to show the distribution of book ratings.
 
-### The dashboard and recommedation can be accessed on:  oci.jmcloudpro.com:8052
+6. **Dashboard Creation**:
+   - **Plotly Dash**: A dashboard was created using Plotly Dash to provide an interactive interface for exploring the book data and generating recommendations. The dashboard includes features like genre selection, rating distribution charts, and a recommendation system interface.
 
-## Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. **Fork the Project**:
-    ```sh
-    git clone https://github.com/jmdtanalyst/book_recommendation.git
-    ```
-
-2. **Create your Feature Branch**:
-    ```sh
-    git checkout -b feature/AmazingFeature
-    ```
-
-3. **Commit your Changes**:
-    ```sh
-    git commit -m 'Add some AmazingFeature'
-    ```
-
-4. **Push to the Branch**:
-    ```sh
-    git push origin feature/AmazingFeature
-    ```
-
-5. **Open a Pull Request**
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-## Contact
-
-Jose Mario Costa  [@Portifolio](https://jmcloudpro.com)
-
-Project Link: [https://www.jmcloudpro.com/book_recommendation](https://www.jmcloudpro.com/book_recommendation)
-
-## Acknowledgements
-
-- [Scikit-learn](https://scikit-learn.org/)
-- [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/)
-- [Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity)
-- [CountVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html)
-
+#### Technologies Used
+- **Programming Language**: Python
+- **Libraries**: BeautifulSoup, Requests, Pandas, Matplotlib, Scikit-learn, Plotly Dash
+- **Tools**: Jupyter Notebook
